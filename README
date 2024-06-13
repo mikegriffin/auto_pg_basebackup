@@ -1,0 +1,5 @@
+Script to automate pg_basebackup, via Windows Task Scheduler or pgAgent
+
+auto_pg_basebackup.ps1 creates and purges backups. auto_pg_basebackup.xml can be imported to Task Scheduler and will run as SYSTEM.
+
+Since auto_pg_basebackup.ps1 will run in Set-ExecutionPolicy -Scope Process Bypass, it is important that this file can't be modified.
